@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jiurn.data.down.dao.DeviceInfoDao">
+
+    <select id="findDeivceInfo" resultType="com.jiurn.data.down.entity.DeviceInfo">
+        SELECT *  FROM dt_deviceInfo LIMIT 1,100
+    </select>
+
+    <select id="fingDeviceInfoByDeviceId" resultType="com.jiurn.data.down.entity.DeviceInfo">
+        SELECT * FROM  dt_deviceInfo WHERE  deviceId = #{deviceId}
+    </select>
+    <select id="findDownDataInfo" resultType="com.jiurn.data.down.entity.DownDataInfoDo">
+        SELECT * FROM  down_data_info WHERE  deviceId = #{deviceId} AND  downBit = 0
+    </select>
+
+
+    <update id="updaDownDataInfo" parameterType="com.jiurn.data.down.entity.DownDataInfoDo">
+        UPDATE down_data_info
+        <set>
+            <if test="dataDownValue1 != null">
+                dataDownValue1 = #{dataDownValue1},
+            </if>
+            <if test="dataDownValue2 != null">
+                dataDownValue2 = #{dataDownValue2},
+            </if>
+            <if test="dataDownValue3 != null">
+                dataDownValue3 = #{dataDownValue3},
+            </if>
+            <if test="dataDownValue4 != null">
+                dataDownValue4 = #{dataDownValue4},
+            </if>
+            <if test="dataDownValue5 != null">
+                dataDownValue5 = #{dataDownValue5},
+            </if>
+            <if test="downTime != null">
+                downTime = #{downTime},
+            </if>
+            <if test="downUpdataTime != null">
+                downUpdataTime = #{downUpdataTime},
+            </if>
+            <if test="downSuccessfulTime != null">
+                downSuccessfulTime = #{downSuccessfulTime},
+            </if>
+            <if test="downBit != null">
+                downBit = #{downBit},
+            </if>
+            <if test="sendNumber != null">
+                sendNumber = #{sendNumber},
+            </if>
+        </set>
+        where deviceId = #{deviceId} AND  sendNumber &lt;= 8;
+    </update>
+
+    <insert id="saveDownDataInfo" parameterType="com.jiurn.data.down.entity.DownDataInfoDo">
+        INSERT  INTO down_data_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="deviceId != null">
+                deviceId,
+            </if>
+            <if test="dataDownValue1 != null">
+                dataDownValue1,
+            </if>
+            <if test="dataDownValue2 != null">
+                dataDownValu2,
+            </if>
+            <if test="dataDownValue3 != null">
+                dataDownValue3,
+            </if>
+            <if test="dataDownValue4 != null">
+                dataDownValue4,
+            </if>
+            <if test="dataDownValue5 != null">
+                dataDownValue5,
+            </if>
+            <if test="downTime != null">
+                downTime,
+            </if>
+            <if test="downUpdataTime != null">
+                downUpdataTime,
+            </if>
+            <if test="downBit != null">
+                downBit,
+            </if>
+            <if test="downSuccessfulTime != null">
+                downSuccessfulTime,
+            </if>
+            <if test="sendNumber != null">
+            sendNumber,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="deviceId != null">
+                #{deviceId},
+            </if>
+            <if test="dataDownValue1 != null">
+                #{dataDownValue1},
+            </if>
+            <if test="dataDownValue2 != null">
+                #{dataDownValue2},
+            </if>
+            <if test="dataDownValue3 != null">
+                #{dataDownValue3},
+            </if>
+            <if test="dataDownValue4 != null">
+                #{dataDownValue4},
+            </if>
+            <if test="dataDownValue5 != null">
+                #{dataDownValue5},
+            </if>
+
+            <if test="downTime != null">
+                #{downTime},
+            </if>
+            <if test="downUpdataTime != null">
+                #{downUpdataTime},
+            </if>
+            <if test="downBit != null">
+                #{downBit},
+            </if>
+            <if test="downSuccessfulTime != null">
+                #{downSuccessfulTime},
+            </if>
+            <if test="sendNumber != null">
+                #{sendNumber},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="findSecretKeyInfo" resultType="com.jiurn.data.down.entity.SecretKey">
+        SELECT  id,query_condition AS queryCondition,app_id AS appId,secret AS secret ,base_url AS baseUrl FROM  secret_key WHERE  query_condition = #{dataDownValue5}
+    </select>
+
+</mapper>

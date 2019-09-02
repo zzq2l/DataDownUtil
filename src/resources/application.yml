@@ -1,0 +1,8 @@
+#选定使用的配置内容 dev
+spring:
+  profiles:
+    active: dev
+
+  
+      
+

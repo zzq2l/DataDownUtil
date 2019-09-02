@@ -1,0 +1,70 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="IOTDownDataService:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/IOTDownDataService_jar</output-path>
+    <root id="root">
+      <element id="archive" name="IOTDownDataService.jar">
+        <element id="module-output" name="IOTDownDataService" />
+      </element>
+      <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:2.0.0" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.6.RELEASE" />
+      <element id="file-copy" path="$USER_HOME$/Desktop/协议文档/燃气报警器/LiteNAdemo_https/Open source components/jackson-databind-2.5.4.jar" />
+      <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-logging:1.5.1.RELEASE" />
+      <element id="library" level="project" name="Maven: com.wordnik:swagger-annotations:1.3.11" />
+      <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:2.0.0" />
+      <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:8.5.11" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.6" />
+      <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:5.3.4.Final" />
+      <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.3.0.Final" />
+      <element id="library" level="project" name="Maven: com.mangofactory:swagger-models:1.0.2" />
+      <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jdbc:8.5.11" />
+      <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:1.5.1.RELEASE" />
+      <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE" />
+      <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.28" />
+      <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.11" />
+      <element id="library" level="project" name="Maven: org.slf4j:jul-to-slf4j:1.7.22" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.6.RELEASE" />
+      <element id="file-copy" path="$USER_HOME$/Desktop/协议文档/燃气报警器/LiteNAdemo_https/Open source components/commons-logging-1.2.jar" />
+      <element id="library" level="project" name="Maven: com.mangofactory:swagger-springmvc:1.0.2" />
+      <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.22" />
+      <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.10" />
+      <element id="library" level="project" name="Maven: com.google.guava:guava:15.0" />
+      <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:8.5.11" />
+      <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.5.1.RELEASE" />
+      <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.17" />
+      <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.3.1" />
+      <element id="file-copy" path="$USER_HOME$/Desktop/协议文档/燃气报警器/LiteNAdemo_https/Open source components/json-lib-2.4-jdk15.jar" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.6.RELEASE" />
+      <element id="file-copy" path="$USER_HOME$/Desktop/协议文档/燃气报警器/LiteNAdemo_https/Open source components/httpmime-4.5.2.jar" />
+      <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.9" />
+      <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:1.5.1.RELEASE" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.0" />
+      <element id="file-copy" path="$USER_HOME$/Desktop/协议文档/燃气报警器/LiteNAdemo_https/Open source components/httpcore-4.4.4.jar" />
+      <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.0" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.6.RELEASE" />
+      <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:8.5.11" />
+      <element id="library" level="project" name="Maven: joda-time:joda-time:2.9.7" />
+      <element id="library" level="project" name="Maven: org.slf4j:log4j-over-slf4j:1.7.22" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.3.6.RELEASE" />
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.22" />
+      <element id="library" level="project" name="Maven: com.alibaba:druid-spring-boot-starter:1.1.10" />
+      <element id="file-copy" path="$USER_HOME$/Desktop/协议文档/燃气报警器/LiteNAdemo_https/Open source components/httpclient-4.5.2.jar" />
+      <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.9" />
+      <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.3.3" />
+      <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-tomcat:1.5.1.RELEASE" />
+      <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.6.RELEASE" />
+      <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.0" />
+      <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.1.41" />
+      <element id="file-copy" path="$USER_HOME$/Desktop/协议文档/燃气报警器/LiteNAdemo_https/Open source components/jackson-annotations-2.5.4.jar" />
+      <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:1.5.1.RELEASE" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.6.RELEASE" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.6.RELEASE" />
+      <element id="file-copy" path="$USER_HOME$/Desktop/协议文档/燃气报警器/LiteNAdemo_https/Open source components/commons-codec-1.9.jar" />
+      <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
+      <element id="file-copy" path="$USER_HOME$/Desktop/协议文档/燃气报警器/LiteNAdemo_https/Open source components/jackson-core-2.5.4.jar" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-websocket:4.3.6.RELEASE" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.6" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.6.RELEASE" />
+    </root>
+  </artifact>
+</component>
