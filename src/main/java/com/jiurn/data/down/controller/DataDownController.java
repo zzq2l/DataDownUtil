@@ -28,7 +28,7 @@ public class DataDownController {
     @ApiOperation(value = "根据设备ID获取设备信息", httpMethod = "POST", response = AjaxJson.class, notes = "获取设备")
     @RequestMapping(value = "/getDeviceInfo", method = RequestMethod.POST)
     @ResponseBody
-    public AjaxJson getDeviceInfo(@RequestParam DataDownDO downDO) {
+    public AjaxJson getDeviceInfo(@RequestBody DataDownDO downDO) {
         try {
             return deviceInfoService.getDeviceInfo(downDO);
         } catch (Exception e) {
@@ -44,6 +44,7 @@ public class DataDownController {
         try {
             return deviceInfoService.setDataDown(downDO);
         } catch (Exception e) {
+
             return AjaxJson.getFailInfo();
         }
 
