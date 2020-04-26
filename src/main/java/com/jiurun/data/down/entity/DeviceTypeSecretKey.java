@@ -2,6 +2,12 @@ package com.jiurun.data.down.entity;
 
 import java.io.Serializable;
 
+/**
+ * @Package: com.jiurun.data.down.entity
+ * @ClassName: DeviceTypeSecretKey
+ * @Author: ${zhouzhiqiang}
+ * @Date: 2020/4/26 15:38
+ */
 public class DeviceTypeSecretKey implements Serializable {
     private Integer id;
     private String smallDeviceType;
