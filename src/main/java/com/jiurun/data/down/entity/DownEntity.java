@@ -1,11 +1,6 @@
 package com.jiurun.data.down.entity;
 
-/**
- * @Package: com.jiurun.data.down.entity
- * @ClassName: DownEntity
- * @Author: ${zhouzhiqiang}
- * @Date: 2020/4/26 15:43
- */
+
 public class DownEntity {
     private String WINDOWOPENTIME;
     private String IMEI;
