@@ -74,12 +74,17 @@ public class DataDownUtil {
         Double multiple = null;
         DecimalFormat df;
         String date;
-        if (!"6-1".equals(deviceInfo.getSmallDeviceType()) && !"7-1".equals(deviceInfo.getSmallDeviceType())) {
+        if (!"6-1".equals(deviceInfo.getSmallDeviceType())
+                && !"7-1".equals(deviceInfo.getSmallDeviceType())
+                && !"6-2".equals(deviceInfo.getSmallDeviceType())
+                && !"7-2".equals(deviceInfo.getSmallDeviceType())) {
             dez = "{WINDOWOPENTIME:" + WINDOWSOPENTIME + ",IMEI:" + IMEI + ",THRESHOLD:" + THRESHOLD + ",DETECTINTERVAL:" + DETECTINTERVAL + ",SENSORLEVEL:" + SENSORLEVEL + ",TIMEINTERVAL:" + TIMEINTERVAL + ",IMSI:" + IMSI + "}";
         } else {
             if ("6-1".equals(deviceInfo.getSmallDeviceType())) {
-                multiple = 100.0D;
-            } else {
+                multiple = 80.0D;
+            } else if ("6-2".equals(deviceInfo.getSmallDeviceType())){
+                multiple = 125.0D;
+            }else {
                 multiple = 66.7D;
             }
 
